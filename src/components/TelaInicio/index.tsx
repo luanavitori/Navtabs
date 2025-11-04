@@ -1,15 +1,13 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 
-export default function TelaBiblioteca() {
+export default function TelaInicio() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Qual biblioteca usamos?</Text>
+      <Text style={styles.title}>Adega Preferida</Text>
       <Text style={styles.text}>
-        Das bibliotecas que utilizamos podemos destacar duas:
+        Aqui você encontra os melhores e mais saborosos vinhos.
       </Text>
-      <Text style={styles.text}>@react-navigation/native</Text>
-      <Text style={styles.text}>@react-navigation/bottom-tabs</Text>
     </View>
   );
 }

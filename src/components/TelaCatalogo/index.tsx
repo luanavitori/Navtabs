@@ -1,12 +1,12 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 
-export default function TelaRotas() {
+export default function TelaCatalogo() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Rotas</Text>
+      <Text style={styles.title}>Nomes das telas</Text>
       <Text style={styles.text}>
-        Cada rota leva a uma nova tela do aplicativo.
+        Perceba que cada aba representa uma tela do aplicativo.
       </Text>
     </View>
   );

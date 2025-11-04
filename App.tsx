@@ -2,11 +2,12 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Feather } from "@expo/vector-icons";
+import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
+import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 
-import TelaHome from "./src/components/TelaHome";
-import TelaDescricao from "./src/components/TelaDescricao";
-import TelaRotas from "./src/components/TelaRotas";
-import TelaBiblioteca from "./src/components/TelaBiblioteca";
+import TelaInicio from "./src/components/TelaInicio";
+import TelaCatalogo from "./src/components/TelaCatalogo";
+import TelaContato from "./src/components/TelaContato";
 
 const Tabs = createBottomTabNavigator();
 
@@ -21,8 +22,8 @@ export default function App() {
         }}
       >
         <Tabs.Screen
-          name="Home"
-          component={TelaHome}
+          name="Inicio"
+          component={TelaInicio}
           options={{
             tabBarIcon: ({ color, size }) => (
               <Feather name="home" color={color} size={size} />
@@ -31,31 +32,24 @@ export default function App() {
         />
 
         <Tabs.Screen
-          name="Telas"
-          component={TelaDescricao}
+          name="Catálogo"
+          component={TelaCatalogo}
           options={{
             tabBarIcon: ({ color, size }) => (
-              <Feather name="monitor" color={color} size={size} />
+              <MaterialCommunityIcons name="bottle-wine" size={24} color="black" />
+              
             ),
           }}
         />
 
-        <Tabs.Screen
-          name="Rotas"
-          component={TelaRotas}
-          options={{
-            tabBarIcon: ({ color, size }) => (
-              <Feather name="map" color={color} size={size} />
-            ),
-          }}
-        />
 
         <Tabs.Screen
-          name="Biblioteca"
-          component={TelaBiblioteca}
+          name="Contato"
+          component={TelaContato}
           options={{
             tabBarIcon: ({ color, size }) => (
-              <Feather name="book" color={color} size={size} />
+              <FontAwesome6 name="contact-book" size={24} color="black" />
+              
             ),
           }}
         />

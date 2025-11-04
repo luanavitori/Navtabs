@@ -1,12 +1,12 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 
-export default function TelaHome() {
+export default function TelaBiblioteca() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Como navegar?</Text>
+      <Text style={styles.title}>Contato</Text>
       <Text style={styles.text}>
-        Toque nas abas abaixo para navegar entre as telas.
+       Entre em contato conosco para comprar nossos produtos
       </Text>
     </View>
   );
@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 20,
     fontWeight: "bold",
-    marginBottom: 10,
+    marginTop: 100
   },
   text: {
     fontSize: 16,
