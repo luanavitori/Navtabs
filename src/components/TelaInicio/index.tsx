@@ -1,25 +1,22 @@
 import React from "react";
 import { View, Text, ImageBackground } from "react-native";
-import styles from "./styles";
-
-// Caminho certo para sua imagem:
-import logo from "../../assets/imagens/logo.jpg";
+import { styles } from "./styles";
 
 export default function TelaInicio() {
   return (
     <ImageBackground
-      source={logo}
+      source={require("../../assets/imagens/logo.jpg")}
       style={styles.background}
-      resizeMode="cover"
-      blurRadius={8} // 👈 deixa o fundo "sensurado"/borrado
+      blurRadius={8}
     >
-      <View style={styles.container}>
-        <Text style={styles.title}>Adega Preferida</Text>
-        <Text style={styles.text}>
+      <View style={styles.overlay}>
+        <Text style={styles.titulo}>Adega Preferida</Text>
+        <Text style={styles.subtitulo}>
           Aqui você encontra os melhores e mais saborosos vinhos.
         </Text>
       </View>
     </ImageBackground>
   );
 }
+
 

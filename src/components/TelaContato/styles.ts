@@ -1,21 +1,42 @@
 import { StyleSheet } from "react-native";
 
-export default StyleSheet.create({
-  container: { flex: 1, backgroundColor: "#fff", padding: 20 },
+export const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#f6ebe4",
+    padding: 20,
+  },
   titulo: {
-    fontSize: 18,
-    textAlign: "center",
-    color: "#4B0101",
-    marginBottom: 20,
+    fontSize: 22,
     fontWeight: "bold",
+    color: "#000",
+    marginBottom: 25,
+    textAlign: "center",
+
   },
   card: {
     flexDirection: "row",
     alignItems: "center",
-    backgroundColor: "#F7E9E9",
-    padding: 15,
+    backgroundColor: "#fff",
     borderRadius: 10,
+    padding: 10,
     marginBottom: 15,
   },
-  text: { marginLeft: 10, fontSize: 16, color: "#333" },
+  icon: {
+    marginRight: 15,
+    alignItems: "center"
+  },
+  label: {
+    fontSize: 20,
+    fontWeight: "bold",
+    color: "#4A0F0F",
+    marginBottom: 2,
+  
+
+  },
+  info: {
+    fontSize: 15,
+    color: "#3e2723",
+ 
+  },
 });

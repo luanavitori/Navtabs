@@ -1,30 +1,28 @@
 import { StyleSheet } from "react-native";
 
-export default StyleSheet.create({
+export const styles = StyleSheet.create({
   background: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
   },
-  container: {
-    backgroundColor: "rgba(0, 0, 0, 0.5)", 
-    padding: 25,
-    borderRadius: 15,
-    alignItems: "center",
-    marginHorizontal: 20,
+  overlay: {
+    padding: 20,
+    borderRadius: 12,
   },
-  title: {
+  titulo: {
     fontSize: 30,
-    fontWeight: "bold",
     color: "#fff",
     textAlign: "center",
     marginBottom: 10,
+    fontWeight: "bold",
+    
   },
-  text: {
-    fontSize: 18,
-    color: "#f5f5f5",
+  subtitulo: {
+    fontSize: 20,
+    color: "#fff",
     textAlign: "center",
-    lineHeight: 24,
   },
 });
+
 
